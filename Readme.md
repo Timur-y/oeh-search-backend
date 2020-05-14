@@ -7,11 +7,7 @@
 Docker images can be built using docker compose:
 
 ```bash
-# Update existing images.
-#
-# This will complain about missing images, safe to ignore.
-docker-compose pull
-
+docker-compose pull --ignore-pull-failures
 docker-compose build
 ```
 
@@ -22,7 +18,7 @@ https://github.com/openeduhub/oeh-search-frontend.
 
 ## Run
 
-Run `docker compose up` to start all required containers.
+Run `docker-compose up` to start all required containers.
 
 ### Runtime Configuration
 
